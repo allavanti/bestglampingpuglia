@@ -1,0 +1,89 @@
+/* ===================================
+   FALLBACK VISIVI — Glamping Puglia
+   
+   Gradienti che replicano i colori del
+   paesaggio pugliese quando le foto non
+   sono ancora caricate.
+   
+   NOTA CONTRASTO: tutti i gradienti sono
+   costruiti SCURI IN BASSO (dove sta il
+   testo dell'hero) e più chiari in alto.
+   Questo, insieme allo scrim in style.css,
+   garantisce sempre la leggibilità.
+=================================== */
+
+/* ---- HERO HOME: la foto è in style.css; colore di riserva dietro ---- */
+.hero__bg { background-color: #3a2a12; }
+
+/* ---- HERO GUIDA ---- tenda tra ulivi */
+.hero-guida .article-hero__bg {
+  background-image:
+    linear-gradient(160deg,
+      #8B9060 0%, #5C7A3E 30%, #2D4018 62%, #16220C 100%);
+}
+
+/* ---- HERO SUL MARE ---- costa garganica */
+.hero-mare .article-hero__bg {
+  background-image:
+    linear-gradient(175deg,
+      #4A90B8 0%, #2A7098 28%, #1A5070 55%, #0D3048 78%, #081826 100%);
+}
+
+/* ---- HERO ROMANTICI ---- tramonto Valle d'Itria */
+.hero-romantici .article-hero__bg {
+  background-image:
+    linear-gradient(160deg,
+      #C4702A 0%, #A8501A 28%, #6B2E12 55%, #3A180C 80%, #1A0E0A 100%);
+}
+
+/* ---- HERO FAMIGLIE ---- entroterra estate
+   (PRIMA virava in azzurro chiaro: causa del problema) */
+.hero-famiglie .article-hero__bg {
+  background-image:
+    linear-gradient(165deg,
+      #5A8828 0%, #4A7830 28%, #2D5016 55%, #1A2E10 80%, #0E1808 100%);
+}
+
+/* ---- HERO WISHNE ---- Parco Lama Santa Croce */
+.hero-wishne .article-hero__bg {
+  background-image:
+    linear-gradient(165deg,
+      #A8B890 0%, #5C7A3E 28%, #2D5016 55%, #16280C 80%, #0A1808 100%);
+}
+
+/* ---- FALLBACK CARD IMMAGINI (index home guide) ---- */
+.card--featured .card__image {
+  background: linear-gradient(135deg, #2D4018 0%, #5C7A3E 55%, #8B6020 100%);
+}
+.articles__grid .card:nth-child(2) .card__image {
+  background: linear-gradient(135deg, #0D3048 0%, #1A6080 55%, #3A9CC8 100%);
+}
+.articles__grid .card:nth-child(3) .card__image {
+  background: linear-gradient(135deg, #1A0E0A 0%, #6B2E12 55%, #C4702A 100%);
+}
+.articles__grid .card:nth-child(4) .card__image {
+  background: linear-gradient(135deg, #0E1808 0%, #2D5016 55%, #5A8828 100%);
+}
+
+/* ---- FALLBACK SCARD (strutture monografiche) ---- */
+.scard--featured .scard__image {
+  background: linear-gradient(135deg, #0A1808 0%, #2D5016 50%, #A8B890 100%);
+}
+.structs-grid .scard:nth-child(2) .scard__image {
+  background: linear-gradient(135deg, #0A1808 0%, #2D4018 45%, #2A7098 100%);
+}
+.structs-grid .scard:nth-child(3) .scard__image {
+  background: linear-gradient(135deg, #081420 0%, #1A6080 50%, #30B0D8 100%);
+}
+.structs-grid .scard:nth-child(4) .scard__image {
+  background: linear-gradient(135deg, #0A1808 0%, #2D5E1A 50%, #87A850 100%);
+}
+.structs-grid .scard:nth-child(5) .scard__image {
+  background: linear-gradient(135deg, #1A1408 0%, #3A2810 40%, #1A6080 100%);
+}
+
+/* ---- FALLBACK INLINE IMAGES ---- */
+.article-image img {
+  background: linear-gradient(160deg, #2D4018 0%, #4A6B20 55%, #8B9060 100%);
+  min-height: 200px;
+}
