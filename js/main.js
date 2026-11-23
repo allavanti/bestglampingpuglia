@@ -45,3 +45,10 @@ document.querySelectorAll('.nav__links a').forEach(a => {
 
 // Footer year
 document.querySelectorAll("[data-year]").forEach(el => { el.textContent = new Date().getFullYear(); });
+
+// Contact e-mail (assembled here so it is not plainly readable in the page source)
+document.querySelectorAll('.footer__mail').forEach(a => {
+  const addr = a.dataset.u + '@' + a.dataset.d;
+  a.href = 'mailto:' + addr;
+  a.textContent = addr;
+});
